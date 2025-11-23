@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-image-orientation",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An n8n node that uses Tesseract.JS to determine the orientation of an image based on the text it contains.",
   "license": "MIT",
   "homepage": "https://github.com/Neremis/n8n-nodes-image-orientation",
