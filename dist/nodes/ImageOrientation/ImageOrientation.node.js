@@ -56,13 +56,13 @@ class ImageOrientation {
                         .orientation_degrees;
                     const orientationConfidence = osdData
                         .orientation_confidence;
-                    const textDetected = orientationDegrees !== null &&
+                    const text_detected = orientationDegrees !== null &&
                         orientationDegrees !== undefined &&
                         orientationConfidence !== null &&
                         orientationConfidence !== undefined;
                     const jsonData = {
                         ...osdData,
-                        textDetected,
+                        text_detected,
                     };
                     const newItem = {
                         json: jsonData,
