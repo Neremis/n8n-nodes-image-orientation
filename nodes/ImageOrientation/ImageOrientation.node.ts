@@ -86,7 +86,7 @@ export class ImageOrientation implements INodeType {
 					const orientationConfidence = osdData
 						.orientation_confidence as number | null | undefined;
 
-					const textDetected =
+					const text_detected =
 						orientationDegrees !== null &&
 						orientationDegrees !== undefined &&
 						orientationConfidence !== null &&
@@ -94,7 +94,7 @@ export class ImageOrientation implements INodeType {
 
 					const jsonData: IDataObject = {
 						...osdData,
-						textDetected,
+						text_detected,
 					};
 
 					const newItem: INodeExecutionData = {

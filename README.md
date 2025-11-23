@@ -49,7 +49,7 @@ Key output properties include:
   How confident Tesseract is that the detected orientation is correct.  
   You can use this in an **IF** node to avoid rotating images when the confidence is too low.
 
-- `textDetected`  
+- `text_detected`  
   A boolean indicating whether Tesseract was able to detect enough text to determine an orientation.  
   - `true`  → Orientation values are considered valid.  
   - `false` → Likely no text (or not enough text) was detected in the image.
@@ -69,7 +69,7 @@ The text is detected and the image should be rotated **270 degrees clockwise** t
   "script_confidence": 8.703704833984375,
   "orientation_degrees": 270,
   "orientation_confidence": 14.62347412109375,
-  "textDetected": true
+  "text_detected": true
 }
 ```
 
@@ -84,14 +84,14 @@ The text is detected and the image is already correctly oriented (`orientation_d
   "script_confidence": 9.5,
   "orientation_degrees": 0,
   "orientation_confidence": 42.1,
-  "textDetected": true
+  "text_detected": true
 }
 ```
 
 ### Example #3 – No text detected
 
 Tesseract could not detect enough text to determine an orientation.  
-All OSD values are `null` and `textDetected` is `false`.
+All OSD values are `null` and `text_detected` is `false`.
 
 ```json
 {
@@ -100,7 +100,7 @@ All OSD values are `null` and `textDetected` is `false`.
   "script_confidence": null,
   "orientation_degrees": null,
   "orientation_confidence": null,
-  "textDetected": false
+  "text_detected": false
 }
 ```
 
